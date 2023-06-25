@@ -1,0 +1,43 @@
+<ion-grid>
+  <ion-row id = "header">
+    <ion-col>
+      <h2> Scan Result</h2>
+    </ion-col>
+  </ion-row>
+
+  <ion-row id ="result">
+    <ion-col>
+      <ion-icon name="shield-checkmark" id ="status-i"></ion-icon>
+      <h5> The encoded URL is to be found to be suspicious</h5>
+    </ion-col>
+  </ion-row>
+
+  <ion-row id ="content">
+    <ion-col>
+
+      <div id ="qr-cont">
+          <qrcode [qrdata]="'qrValue'" [width]="180" [errorCorrectionLevel]="'M'"></qrcode>
+      </div>
+      <div id = "content-cont"> 
+          <p><b>Content</b></p>
+          <p>www.faceb00k.com</p>
+      </div>
+
+      <div id = "status-cont">
+          <p>Status</p>
+          <p>Suspicious</p>
+      </div>
+
+      <div id ="button-cont">
+        <ion-button> Go to www.faceb00k.com</ion-button>
+        <ion-button (click) = "goToHome()"> Back</ion-button>
+
+      </div>
+    </ion-col>
+  </ion-row>
+
+
+
+
+
+</ion-grid>

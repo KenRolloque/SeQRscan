@@ -1,0 +1,196 @@
+*{
+    padding: 0;
+    margin: 0;
+ 
+}
+
+:root{
+
+    --light: rgb(139, 139, 139);
+}
+
+
+// ion-col{
+// }
+ion-grid{
+    background-color: white;
+}
+#header{
+  
+    width: 100%;
+    font: normal 12px Verdana;
+    background-color: #200e88;
+    color: white;
+
+}
+
+#header > ion-col{
+    width: 100%;
+    padding: 2em 0 0 2em;
+    font: normal 14px Verdana;
+
+}
+
+
+#input-container{
+    width: 100%;
+    padding: 2em 0 2em 0;
+    background: rgb(32,14,136);
+    background: linear-gradient(180deg, rgba(32,14,136,1) 0%, rgba(1,176,160,1) 100%);
+}
+
+#input-container > ion-col{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+}
+
+#description{
+    text-align: center;
+    font-family: normal 14px Verdana;
+    color: white;
+    line-height: 2em;
+}
+
+#url-cont{
+    display: flex;
+    height: 3em;
+    width: 70%;
+    padding: 0 1em  0 1em;
+    border-radius: 5px;
+    text-align: center;
+    background-color: white;
+
+}
+
+#url-input{
+    font-family: normal 14px Verdana;
+    min-height: 3em;
+    max-height: 3em;
+    width:100%;
+    background-color: white;
+    color: rgb(108, 108, 108);
+}
+
+#button-cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    justify-content: center;
+    width: 100%;
+}
+
+
+#generate-btn, #view-btn{
+    font: normal 12px Arial;
+    width: 15em;
+    --border-radius: 5px;
+
+
+}
+
+#generate-btn{
+    --background:#1565C0;
+    display: flex;
+}
+
+#generate-btn > div , #view-btn > div{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+#view-btn{
+    --background: none;
+    --box-shadow: 0;
+}
+
+#generate-icon, #view-icon{
+    font-size: 16px;
+}
+
+#row-result, #row-result > ion-col{
+    width: 100%;
+}
+#row-result >ion-col{
+    display: flex;
+    justify-content: center;
+    padding-top: 1em;
+}
+
+#result-cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    width: 90%;
+    padding: 2em 0 2em 0;
+}
+
+#result-cont > p{
+    font: normal 16px Verdana;
+    color: rgb(0, 168, 0);
+}
+
+#desc-cont{
+    padding: 0 2em 0 3em;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    // border: 1px solid red;
+    gap: 1em;
+    margin: 1em 0 1em 0;
+}
+#desc-label{
+    font: bold 16px Verdana;
+  
+}
+
+#desc-cont > ion-input{
+    text-align: center;
+    border-bottom: 1px solid rgb(153, 153, 153);
+   font-family: normal 14px Verdana;
+    width: 15em;
+    min-height: 1.2em;
+    max-height: 1.2em;
+}
+
+
+#res-btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 1em;
+
+
+}
+
+#res-btn > ion-button{
+    width: 8em;
+    height: 2em;
+    font: normal 14px Arial;
+    --border-radius:5px;
+}
+
+#download-btn > div, #add-btn > div{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    font: normal 12px Arial;
+}
+
+#download-btn{
+    --background:white;
+    --box-shadow: 0;
+    color: var(--light);
+}
+
+#download-toast{
+   --background: white;
+   color: rgb(0, 168, 0);
+   margin-top: 1rem;
+}

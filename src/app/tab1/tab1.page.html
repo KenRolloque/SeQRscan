@@ -1,0 +1,76 @@
+<ion-grid>
+
+  <ion-row id ="header">
+    <ion-col>
+        <h2>Create</h2>
+    </ion-col>
+  </ion-row>
+
+
+  <ion-row id = "input-container">
+    <ion-col>
+      <p id ="description">Enter your URL in the tex field below <br> and
+      click Generate QR code to create a QR Code</p>
+     
+      <div id ="url-cont">
+        <ion-input type ="text" id ="url-input"  [(ngModel)] ="inputValue" placeholder ="Enter URL"> </ion-input>
+      </div>
+
+      <div id ="button-cont">
+          <ion-button id="generate-btn" (click) ="generateQR()" [disabled] ="!inputValue">
+            
+            <div><ion-icon name="qr-code-outline" id  ="generate-icon"></ion-icon>
+            Generate QR Code
+            </div>
+          </ion-button>
+          <ion-button id="view-btn" (click) ="viewQR()">  
+            <div>
+              <ion-icon name="images-outline" id ="view-icon"></ion-icon>
+              View QR Code List
+            </div>
+          </ion-button>
+      </div>
+    </ion-col>
+  </ion-row>
+
+
+  <ion-row id ="row-result">
+      <ion-col>
+        <ion-card id ="result-cont" *ngIf="showContainer">
+          <p> Your QR code is ready </p>
+
+          <qrcode [qrdata]="qrValue" [width]="150" [errorCorrectionLevel]="'M'"></qrcode>
+
+          <p id ="content"> {{ inputValue }}</p>
+
+          <div id ="desc-cont">
+            <p id ="desc-label">Description: </p>
+            <ion-input placeholder="Enter Description">  </ion-input>
+          </div>
+          
+          <div id="res-btn">
+
+            <ion-button id ="download-btn">
+              <div>
+                <ion-icon name="download-outline" id ="download-i"></ion-icon>
+                DOWNLOAD                  
+              </div>
+            </ion-button>
+            
+              <ion-button id ="add-btn"> 
+                <div>
+                  <ion-icon name="add-outline" id ="add-i"></ion-icon>
+                  ADD
+                </div>
+              </ion-button>
+
+              <ion-toast trigger="download-btn" id="download-toast"position ="top" message="QR code downloaded successfully" [duration]="2000" icon ="checkmark-circle"></ion-toast>
+              <ion-toast trigger="add-btn" id="download-toast" position ="top" message="QR code added successfully" [duration]="2000" icon ="checkmark-circle"></ion-toast>
+
+          </div>
+        </ion-card>
+      </ion-col>
+  </ion-row>
+
+
+</ion-grid>
