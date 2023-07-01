@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+ 
+}
+
+ion-grid{
+    background-color: white;
+    width: 100%;
+}
+
+#history-cont{
+   
+}
+#header{
+    width: 100%;
+    margin-bottom: 1.5em;
+ 
+}
+
+ion-col{
+    padding: 1em 0 1em 0;
+}
+#header > ion-col{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 2em 0 0 2em;
+    font: normal 14px Verdana;
+
+}
+
+#header > ion-col:last-child{
+    padding: 2em 0 0 0em;
+    justify-content: center;
+ 
+}
+
+#header > ion-col:last-child > div{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap:1em;
+
+    width: 50%;
+}
+
+#history-cont > ion-col{
+   
+    display: flex;
+    align-items: center;
+
+}
+
+
+ion-checkbox{
+    --size: 16px;
+}
+
+#trash-i{
+    font-size: 19px;
+}
+#user-i, #description{
+
+    justify-content: center;
+   
+}
+#user-i >ion-icon{
+
+    font-size: 24px;
+    color: #2FA0D8;
+}
+
+#description > div{
+    width: 80%;
+    font: normal 14px Verdana;
+    margin-right: 10%;
+}
+
+#time{
+    justify-content: flex-end;
+}
+#time > div{
+    margin-right: 1em;
+    font: normal 14px Verdana;
+}
+#checkbox {
+    justify-content: center;
+}
+#checkbox > ion-checkbox{
+
+}

@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+ 
+}
+ion-grid{
+    background-color: white;
+    overflow-y: scroll;
+}
+
+#header{
+  
+    width: 100%;
+    font: normal 12px Verdana;
+
+}
+
+#header > ion-col{
+    width: 100%;
+    padding: 2em 0 0 2em;
+    font: normal 14px Verdana;
+
+}
+
+ion-row, ion-col{
+    width: 100%;
+}
+
+ion-col{
+    display: flex;
+}
+
+#qr-cont >ion-col{
+    justify-content: center;
+    padding: 1em;
+}
+#qr-card{
+
+    display: flex;
+    align-items: center;
+    height: 10em;
+    width: 95%;
+    
+}
+
+#qr-card > div{
+    display: flex;
+
+}
+
+#qr-card > div:first-child{
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+#qr-card > div:last-child{
+
+    flex-direction: column;
+    gap: 1em;
+    width: 60%;
+}
