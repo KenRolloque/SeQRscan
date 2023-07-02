@@ -1,0 +1,7 @@
+{
+  "name": "qrshield",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
