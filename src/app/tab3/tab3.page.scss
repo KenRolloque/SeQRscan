@@ -1,0 +1,66 @@
+*{
+    padding: 0;
+    margin: 0;
+ 
+}
+
+
+
+ion-grid{
+    background-color: white;
+    width: 100%;
+}
+
+
+#header{
+    width: 100%;
+    margin-bottom: 1.5em;
+    padding: 1em 0 0 2rem;
+ 
+}
+
+ion-col > h2{
+    font: normal 18px Poppins;
+}
+
+#header *{
+
+}
+#description{
+    display: flex;
+    flex-direction: column;
+  
+}
+
+span{
+    color: #004594;
+}
+#history-cont{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+ }
+ 
+
+ #history-cont > div{
+    width: 90%;
+ }
+
+ion-col{
+    padding: 1em 0 1em 0;
+}
+
+#user-icon{
+    font-size: 30px;
+    padding: 0 .5em 0 0;
+    // color: rgba(1, 192, 192, 0.671);
+    color: #004594;
+}
+
+#description, #time{
+    font: normal 14px Poppins;
+}
+
+ion-item{
+    margin-bottom: 1em;
+}

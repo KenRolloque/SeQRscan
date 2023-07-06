@@ -1,0 +1,56 @@
+
+<ion-content>
+  <ion-grid id ="main">
+
+
+      <!-- wave image -->
+      <ion-row id ="waves">
+         <ion-img src ="assets/wave.png"></ion-img>
+      </ion-row>
+
+
+    <!-- logo form -->
+
+    <ion-row id = "header">
+      <ion-icon id ="header-logo" name="person-circle-outline"></ion-icon>
+      <h2>Welcome Back</h2>
+      <h5>Signin to continue</h5>
+    </ion-row>
+
+
+      <ion-row id = "form-row">
+        <ion-col id ="form-container">
+            <!-- <h2>Login</h2> -->
+            <ion-input placeholder ="Email" ></ion-input>
+            <ion-input type ="password" placeholder ="Password" ></ion-input>
+          
+            <ion-button id ="login-bttn" (click) ="goToMain()">LOGIN</ion-button>
+            <div>
+              <span></span> 
+              <p>or</p>
+              <span></span>
+            </div>
+
+            <ion-button id ="google-bttn"> <img src="assets/google.png">Continue with Google</ion-button>
+
+            <p>Need an account? Press the Google button<br> 
+              above or sign up with email</p>
+
+
+            <div id ="logo-container">  
+                <ion-icon id = "qr-icon" name="qr-code-outline"></ion-icon>
+                <h2>SeQRscan</h2>
+            </div>
+
+        </ion-col>
+      </ion-row>
+
+          <!-- logo image -->
+          <!-- <ion-row>
+            <ion-col id =logo-row>
+              
+            </ion-col>
+          </ion-row> -->
+
+  </ion-grid>
+</ion-content>

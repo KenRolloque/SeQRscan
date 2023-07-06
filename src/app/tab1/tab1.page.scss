@@ -1,0 +1,322 @@
+*{
+    padding: 0;
+    margin: 0;
+ 
+}
+
+:root{
+
+    --light: rgb(139, 139, 139);
+}
+
+
+// ion-grid{
+//     // background-color: rgb(255, 255, 255);
+//     // background-color: #001C30;
+//     // background-color: white;
+    
+// }
+
+#main{
+    overflow-y: scroll;
+    background-color: white;
+}
+#header{
+  
+    width: 100%;
+    color: white;
+    padding: 0em 0 0 2rem;
+    font: normal 18px Poppins;
+}
+
+
+
+
+#input-container{
+    width: 100%;
+    padding: 2em 0 2em 0;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='300' height='300' preserveAspectRatio='none' viewBox='0 0 300 300'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1068%26quot%3b)' fill='none'%3e%3crect width='300' height='300' x='0' y='0' fill='rgba(0%2c 69%2c 148%2c 1)'%3e%3c/rect%3e%3cpath d='M0%2c131.203C25.532%2c132.812%2c51.701%2c127.766%2c73.163%2c113.843C94.578%2c99.95%2c112.242%2c78.904%2c118.691%2c54.205C124.756%2c30.976%2c112.024%2c8.085%2c106.899%2c-15.37C102.196%2c-36.896%2c104.805%2c-61.674%2c89.839%2c-77.846C74.965%2c-93.919%2c50.698%2c-95.319%2c29.175%2c-99.36C9.575%2c-103.039%2c-10.248%2c-105.683%2c-29.432%2c-100.237C-48.725%2c-94.76%2c-64.156%2c-81.897%2c-79.172%2c-68.603C-96.246%2c-53.486%2c-118.047%2c-39.966%2c-122.718%2c-17.644C-127.434%2c4.895%2c-112.869%2c26.231%2c-103.409%2c47.225C-93.901%2c68.326%2c-85.432%2c90.39%2c-67.466%2c104.98C-48.349%2c120.505%2c-24.578%2c129.654%2c0%2c131.203' fill='%2300326b'%3e%3c/path%3e%3cpath d='M300 402.728C323.847 401.726 348.218 418.749 369.895 408.759 391.94 398.599 405.517 374.534 411.959 351.13 417.969 329.297 407.572 307.408 403.944 285.055 400.394 263.183 401.242 240.838 390.88 221.252 378.69 198.212 363.729 174.654 339.92 164.043 314.992 152.933 285.603 154.159 259.713 162.794 234.3 171.27 209.857 187.522 197.803 211.446 186.49200000000002 233.89499999999998 203.087 260.72 197.973 285.331 192.317 312.551 160.833 333.686 166.761 360.848 172.58499999999998 387.536 200.168 406.602 226.227 414.793 250.49 422.419 274.589 403.795 300 402.728' fill='%230058bd'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1068'%3e%3crect width='300' height='300' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+   #input-container > ion-col{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+}
+
+#description{
+    text-align: center;
+    font: normal 14px Roboto;
+    color: rgb(202, 202, 202);
+    line-height: 1.5em;
+    width: 80%;
+}
+
+#url-cont{
+    display: flex;
+    height: 3em;
+    width: 80%;
+    padding: 0 1em  0 1em;
+    border-radius: 5px;
+    text-align: center;
+    background-color: white;
+
+}
+
+#url-input{
+    font: normal 14px Roboto;
+    min-height: 3em;
+    max-height: 3em;
+    width:100%;
+    background-color: white;
+    color: rgb(108, 108, 108);
+}
+
+#button-cont{
+    display: flex;
+    // flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    justify-content: center;
+    width: 100%;
+}
+
+
+#generate-btn, #clear-btn{
+    font: normal 12px Poppins;
+    width: 13em;
+    --border-radius: 5px;
+
+
+}
+
+#generate-btn{
+
+    --background: #25C196;
+    display: flex;
+}
+
+#generate-btn > div , #clear-btn > div{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+#clear-btn{
+    // --background: none;
+    --box-shadow: 0;
+}
+
+#generate-icon, #view-icon{
+    font-size: 16px;
+}
+
+
+#row-result, #row-result > ion-col{
+    width: 100%;
+}
+#row-result >ion-col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1em;
+    gap: 1em;
+    background-color: none;
+}
+
+
+#result-cont{
+    background-image: url("../../assets/card2.svg");
+    background-size: cover;
+
+}
+
+#instruction{
+    width: 100%;
+    color: red;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    // border: 1px solid red;
+    padding: 1em 0;
+    font: normal 14px Poppins;
+}
+
+
+#instruction >ion-icon{
+    font-size: 18px;
+}
+#qr-col{
+    display: flex;
+    justify-content: center;
+}
+
+
+// #result-grid > ion-row > ion-col{
+
+//     background-color: white;
+// }
+#result-cont{
+
+    padding: 0em 0 2em 0;
+    width: 90%;
+}
+
+#output-col{
+
+ 
+}
+
+#desc-row{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1em;
+}
+
+#desc-row > ion-card{
+    display: flex;
+    width: 90%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5em;
+    margin-top: 1.5em;
+    // background-color: #00C2D4;
+    color:#00C2D4;
+    background-image: url("../../assets/stacked-peaks-haikei.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+#desc-row > ion-card > ion-icon{
+    font-size: 18px;
+    padding: 0 5px;
+}
+#ready-id{
+
+
+}
+
+#desc-row{
+    color: #25C196;
+}
+
+#output-rocw{
+
+}
+
+#cont-label, #desc-label{
+    font: bold 12px Poppins;
+}
+
+#output{
+    padding-top: 1.5em;
+}
+
+#output{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+
+#content{
+    font: normal 12px Poppins;
+}
+
+#cont-label{
+    color: #8B1F00;
+}
+
+#desc-label{
+    color: #8B1F00;
+}
+
+#content-cont, #desc-cont{
+    display: flex;
+    flex-direction: column;
+    gap: .3em;
+    padding-right: .3em;
+}
+#sample{
+    display: flex;
+}
+
+#desc-cont > ion-input{
+    border-bottom: 1px solid rgb(153, 153, 153);
+    font: normal 12px Poppins;
+    width: 90%;
+    min-height: 2em;
+    max-height: 2em;
+ 
+}
+
+
+
+
+// Buttons
+
+#res-btn{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    padding: 1em 0;
+    // margin-top: 2em;
+    background-color: #004594;
+}
+
+#res-btn > ion-button{
+    width: 8em;
+    height: 2em;
+    font: normal 14px Poppins;
+    --border-radius:5px;
+    
+}
+
+#download-btn > div, #add-btn > div{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    font: normal 12px Poppins;
+
+}
+
+#download-btn{
+    --background:#004594;
+    --box-shadow: 0;
+    // color: var(--light);
+    color: white;
+}
+
+#add-btn{
+    --background:#25C196;
+}
+
+#download-toast{
+   --background: white;
+   color: rgb(0, 168, 0);
+   margin-top: 1rem;
+}
+
+#download-input{
+
+    width: 40%;
+   // --background:rgb(240, 240, 240);
+    --padding-start:1em;
+    min-height: 2.3em;
+    border-radius: 5px;
+}
+
+.wrapper > h5{
+    color:rgb(125, 125, 125) ;
+}
+
+#dl{
+    // --font: normal 12px Verdana;
+    font: normal 10px Poppins;
+}

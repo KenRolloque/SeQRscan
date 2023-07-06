@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+ 
+}
+
+:root{
+
+    --light: rgb(139, 139, 139);
+}
+
+ion-col > h2 {
+    font: normal 18px Poppins;
+}
+ion-grid{
+    background-color: white;
+}
+
+#header{
+  
+    width: 100%;
+    font: normal 12px Verdana;
+
+}
+#header > ion-col{
+    width: 100%;
+    padding: 2em 0 0 2em;
+    font: normal 14px Verdana;
+}
+
+#button-cont > ion-col{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    height: 85vh;
+}
+
+#button-cont > ion-col > ion-button {
+    width: 10em;
+
+}
+
+#button-cont > ion-col > ion-button:first-child{
+
+    --background:#C20000;
+}
+
+#button-cont > ion-col > ion-button:last-child{
+
+    --background:#00BF63;
+}
