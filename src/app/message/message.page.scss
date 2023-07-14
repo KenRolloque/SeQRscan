@@ -1,0 +1,66 @@
+*{
+    padding: 0;
+    margin: 0;
+  
+}
+ion-grid{
+    background-color: white;
+}
+
+ion-grid, ion-col, ion-row{
+    width: 100%;
+}
+
+#header{
+    // background-color: #00BF63;
+    color: #00BF63;
+}
+
+#header >ion-col{
+    padding: 2em 0 0 2em;
+    font: normal 14px Verdana;
+}
+
+
+#content{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+//QR
+#qr-cont{
+    margin-top: 2em;
+}
+
+// card
+
+ion-card{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 1em 2em;
+    min-height: 40vh;
+    margin-bottom: 1em;
+}
+
+#message {
+    margin-top: 1em;
+    text-align: justify;
+    overflow-y: auto;
+}
+
+// Button
+#button-cont > ion-button{
+        width: 20em;
+        height: 2.5em;
+        --border-radius:5px;    
+}
+
+#button-cont > ion-button:first-child{
+    --background: #00BF63;
+    font: normal 14px Poppins; 
+}
+

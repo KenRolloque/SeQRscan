@@ -8,6 +8,8 @@ import { NavController } from '@ionic/angular';
 })
 export class Tab2Page implements OnInit {
 
+
+  toogleState :boolean = false;
   constructor(private navCtrl: NavController) {}
 
   ngOnInit() {
@@ -19,6 +21,10 @@ export class Tab2Page implements OnInit {
 
   goToSafe(){
     this.navCtrl.navigateForward('/safe-page');
+  }
+
+  goToMessage(){
+    this.navCtrl.navigateForward('/message');
   }
 
 }

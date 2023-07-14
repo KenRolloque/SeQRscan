@@ -6,88 +6,59 @@
     </ion-col>
   </ion-row>
 
-  <ion-row id="qr-cont">
-    <ion-col>
-      <ion-card id ="qr-card">
-          <div id="qr-cont">
-            <qrcode [qrdata]="'qrValue'" [width]="100" [errorCorrectionLevel]="'M'"></qrcode>
-          </div>
+  <ion-row id = "size-row">
+    <div>
+      <p id ="note">You can change the size of the QR code by changing the value below</p>
 
-          <div id ="desc-cont">
-             <h6><span>Description:</span> Facebook </h6>
-             <h6><span>Content:</span>https://www.facebook.com</h6>
-             <h6><span>Created:</span> 06-25-2023 </h6>
-          </div>
-
-          <div>
-            <ion-button id = "download-btn"><ion-icon name="arrow-down-circle-outline"></ion-icon></ion-button>
-            <ion-button id = "delete-btn" (click) = "showAlertWithToast()"><ion-icon name="close-circle-outline"></ion-icon></ion-button>
-          </div>
-      </ion-card>
-    </ion-col>
-  </ion-row>
-
-  <ion-row id="qr-cont">
-    <ion-col>
-      
-      <ion-card id ="qr-card">
-          <div id="qr-cont">
-            <qrcode [qrdata]="'qrValue'" [width]="100" [errorCorrectionLevel]="'M'"></qrcode>
-          </div>
-
-          <div id ="desc-cont">
-             <h6><span>Description:</span> Facebook </h6>
-             <h6><span>Content:</span>https://www.facebook.com</h6>
-             <h6><span>Created:</span> 06-25-2023 </h6>
-          </div>
-
-          <div>
-            <ion-button id = "download-btn"><ion-icon name="arrow-down-circle-outline"></ion-icon></ion-button>
-            <ion-button><ion-icon name="close-circle-outline"></ion-icon></ion-button>
-
-           
-          
-          </div>
-      </ion-card>
-    </ion-col>
-  </ion-row>
-
-  <ion-row id="qr-cont">
-    <ion-col>
-      
-      <ion-card id ="qr-card">
-          <div id="qr-cont">
-            <qrcode [qrdata]="'qrValue'" [width]="100" [errorCorrectionLevel]="'M'"></qrcode>
-          </div>
-
-          <div id ="desc-cont">
-             <h6><span>Description:</span> Facebook </h6>
-             <h6><span>Content:</span>https://www.facebook.com</h6>
-             <h6><span>Created:</span> 06-25-2023 </h6>
-          </div>
-
-          <div>
-            <ion-button id = "download-btn"><ion-icon name="arrow-down-circle-outline"></ion-icon></ion-button>
-            <ion-button id = "delete-btn" (click) = "showAlertWithToast()"><ion-icon name="close-circle-outline"></ion-icon></ion-button>
-
-            
-          </div>
-      </ion-card>
-    </ion-col>
-  </ion-row>
-  <ion-modal id="example-modal" #modal trigger="download-btn">
-    <ng-template>
-      <div class="wrapper">
-        <h5>Size: </h5>
-          <!-- <ion-input label="Size"  id="download-input" inputmode ="numeric" placeholder="Enter Size (px)"> </ion-input> -->
-          <ion-input  id="download-input" inputmode ="numeric" fill="undefined" placeholder="Enter Size (px)"></ion-input>                        
-          <ion-button id="dl" (click) = "modal.dismiss()">Download</ion-button>
-          <ion-toast trigger="dl" id="download-toast"position ="top" message="QR code downloaded successfully" [duration]="2000" icon ="checkmark-circle"></ion-toast>
+      <div id ="size-container">
+        <ion-label>Size: </ion-label>
+        <ion-input type ="number" [(ngModel)] = "defaultSize" > </ion-input>
       </div>
-    </ng-template>
-  </ion-modal>
+    </div>
+  </ion-row>
 
+  <ion-row id="qr-cont">
+    <ion-col>
+      <ion-card id ="qr-card">
+          <div id="qr-cont">
+            <qrcode [qrdata]="'qrValue'" [width]="100" [errorCorrectionLevel]="'M'"></qrcode>
+          </div>
 
-  <ion-toast trigger="dl" id="download-toast"position ="top" message="QR code downloaded successfully" [duration]="2000" icon ="checkmark-circle"></ion-toast>
+          <div id ="desc-cont">
+             <h6><span>Description:</span> Facebook </h6>
+             <h6><span>Content:</span>https://www.facebook.com</h6>
+             <h6><span>Created:</span> 06-25-2023 </h6>
+          </div>
 
+          <div>
+            <ion-button id = "download-btn" (click) ="getValue()">
+              <ion-icon name="ellipsis-vertical-circle-outline"></ion-icon>
+            </ion-button>
+          </div>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+
+  
+  <ion-row id="qr-cont">
+    <ion-col>
+      <ion-card id ="qr-card">
+          <div id="qr-cont">
+            <qrcode [qrdata]="'qrValue'" [width]="100" [errorCorrectionLevel]="'M'"></qrcode>
+          </div>
+
+          <div id ="desc-cont">
+             <h6><span>Description:</span> Facebook </h6>
+             <h6><span>Content:</span>https://www.facebook.com</h6>
+             <h6><span>Created:</span> 06-25-2023 </h6>
+          </div>
+
+          <div>
+            <ion-button id = "download-btn" (click) ="getValue()">
+              <ion-icon name="ellipsis-vertical-circle-outline"></ion-icon>
+            </ion-button>
+          </div>
+      </ion-card>
+    </ion-col>
+  </ion-row>
 </ion-grid>

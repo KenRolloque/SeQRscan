@@ -9,6 +9,8 @@
     --light: rgb(139, 139, 139);
 }
 
+ion-row{
+}
 ion-col > h2 {
     font: normal 18px Poppins;
 }
@@ -28,16 +30,123 @@ ion-grid{
     font: normal 14px Verdana;
 }
 
+
+// Display QR Code
+#qr-cont{
+    display: flex;
+    justify-content: center;
+    padding: 6em 0 0 0;
+}
+
+
+// Display Range Component
+
+
+#range,#functionality {
+    display: flex;
+    justify-content: center;
+}
+#range > div{
+    width: 80%;
+  
+}
+
+#out-icons{
+    padding: 0 1em 0 0;
+}
+
+#in-icons{
+    padding: 0  0 0 1em;
+}
+
+
+// Display Add Image and Flashlight
+
+#functionality{
+    padding: 2em 0 0 0;
+}
+
+// #functionality >div{
+//     display: flex;
+//     align-items: center;
+//     border-radius: 25px;
+//     width: 80%;
+//     padding: .5em 1em;
+//     background-color: #004594;
+//     justify-content: space-around;
+// }
+
+ion-toggle{
+    --track-background:red;
+    --handle-height:10px;
+    --handle-width:10px;
+    // width: 10px;
+    // height: 10p;
+}
+
+ion-toggle::part(track),
+ion-toggle.toggle-checked::part(track) {
+  height: 20px;
+  width: 40px;
+    padding: 0 5px ;
+  background: white;
+
+  /* Required for iOS handle to overflow the height of the track */
+  overflow: visible;
+}
+
+ion-toggle::part(track) {
+    background: #eb7769;
+  }
+  
+  ion-toggle.toggle-checked::part(track) {
+    background: #00f7ff;
+  }
+#functionality > div > span{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+   
+}
+#functionality > div > span >ion-icon{
+    font-size: 18px;
+    color: white;
+}
+
+#upload-label{
+    font: normal 10px Poppins;
+}
+
+// #flashlight-label{
+//     font: normal 10px Poppins;
+//     color: #00BF63;
+// }
+
+.on-text {
+    color: green;
+    font: normal 12px Poppins;
+  }
+  
+  .off-text {
+    color: red;
+    font: normal 12px Poppins;
+  }
+
+#button-cont{
+
+    padding: 5em 0 0 0;
+
+}
 #button-cont > ion-col{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1em;
-    height: 85vh;
 }
 
 #button-cont > ion-col > ion-button {
-    width: 10em;
+    width: 6em;
 
 }
 
@@ -46,7 +155,7 @@ ion-grid{
     --background:#C20000;
 }
 
-#button-cont > ion-col > ion-button:last-child{
+#button-cont > ion-col > ion-button:nth-child(2){
 
     --background:#00BF63;
 }

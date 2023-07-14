@@ -101,60 +101,18 @@ div > ion-icon{
 }
 
 
-// ion-row{
-//     display: flex;
-//     width: 100%;
-//         // border: 1px solid red;
-//     justify-content: center;
-// }
 
-// ion-row > div{
-//     display: flex;
-//     align-items: center;
-//     gap: 10px;
-// }
-
-
-//  // Profile Picture
-// #profile{
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     justify-content: center;
-//     padding-bottom: 1em;
-// }
-
-
-
-
-
-// ion-row > div{
-//     width: 80%;
-//     // border: 1px solid red;
-//     padding: 1em 0em;
-// }
-
-
-
-
-
-// //email
-
-
-
-// // Logout
 
 ion-button{
-    // --background:white;
-    // color: rgb(95, 95, 95);
-    // min-height: 1.2em;
-    // max-height: 1.2em;
-    // width: 4em;
-    // --box-shadow:0xp;
-    // --border-radius:0px;
+
     display: flex;
+    width: 10em;
     font: normal 14px Poppins;
     --color-activated:white;
+    --border-radius:5px;
     
+}
 
+#logout-icon{
+    padding: 0 10px 0  0;
 }

@@ -25,7 +25,7 @@
             Generate
             </div>
           </ion-button>
-          <ion-button id="clear-btn" (click) ="clearQR()" [disabled] ="!inputValue">  
+          <ion-button id="clear-btn" (click) ="clearField()" [disabled] ="!inputValue">  
             <div>
               <ion-icon name="close-outline"></ion-icon>
               Clear
@@ -80,28 +80,17 @@
 
         <ion-card id = "res-btn" *ngIf="showContainer">
             <!-- Download Button -->
-            <ion-button id ="download-btn">
+
+           
+            <ion-button id ="download-btn" (click) ="goToSize()">
               <div>
                 <ion-icon name="download-outline" id ="download-i"></ion-icon>
                 DOWNLOAD    
-                
-                <ion-modal id="example-modal" #modal trigger="download-btn">
-                  <ng-template>
-                    <div class="wrapper">
-                      <h5>Size: </h5>
-                        <!-- <ion-input label="Size"  id="download-input" inputmode ="numeric" placeholder="Enter Size (px)"> </ion-input> -->
-                        <ion-input  id="download-input" inputmode ="numeric" fill="undefined" placeholder="Enter Size (px)"></ion-input>                        
-                        <ion-button id="dl" (click) = "modal.dismiss()">Download</ion-button>
-                        <ion-toast trigger="dl" id="download-toast"position ="top" message="QR code downloaded successfully" [duration]="2000" icon ="checkmark-circle"></ion-toast>
-                    </div>
-                  </ng-template>
-                </ion-modal>
               </div>
-
             </ion-button>
 
              <!-- Add Button -->
-              <ion-button id ="add-btn" [disabled] ="!descValue"> 
+              <ion-button id ="add-btn" [disabled] ="!descValue" (click) ="clearQR()"> 
                 <div>
                   <ion-icon name="add-outline" id ="add-i"></ion-icon>
                   ADD

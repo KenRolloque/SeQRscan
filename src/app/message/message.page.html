@@ -1,0 +1,32 @@
+<ion-grid>
+  <ion-row id = "header">
+    <ion-col>
+      <h2> Scan Result</h2>
+    </ion-col>
+  </ion-row>
+
+
+  <ion-row id ="content">
+      <div id ="qr-cont">
+          <qrcode [qrdata]="'qrValue'" [width]="200" [errorCorrectionLevel]="'M'"></qrcode>
+      </div>
+
+      <ion-card id ="card-cont">
+          <h5>Content: </h5>
+          <p id ="message">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus voluptatum harum vero assumenda minima nam adipisci delectus dolor omnis labore mollitia reprehenderit enim voluptatem magnam accusantium perspiciatis, deleniti voluptates quas?
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus sapiente dolor fuga ea? Sunt, quae exercitationem. Aperiam similique doloribus vitae eum voluptate, officiis id soluta? Praesentium maiores nostrum accusantium? Dolorum!
+          </p>
+      </ion-card>
+      <div id ="button-cont">
+        <ion-button (click) ="goToHome()"> Back</ion-button>
+
+      </div>
+
+  </ion-row>
+
+
+
+
+
+</ion-grid>

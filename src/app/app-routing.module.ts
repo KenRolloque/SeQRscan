@@ -51,6 +51,30 @@ const routes: Routes = [
     path: 'gallery',
     loadChildren: () => import('./gallery/gallery.module').then( m => m.GalleryPageModule)
   },
+  {
+    path: 'google',
+    loadChildren: () => import('./google/google.module').then( m => m.GooglePageModule)
+  },
+  {
+    path: 'google-add',
+    loadChildren: () => import('./google-add/google-add.module').then( m => m.GoogleAddPageModule)
+  },
+  {
+    path: 'google-pass',
+    loadChildren: () => import('./google-pass/google-pass.module').then( m => m.GooglePassPageModule)
+  },
+  {
+    path: 'password',
+    loadChildren: () => import('./password/password.module').then( m => m.PasswordPageModule)
+  },
+  {
+    path: 'message',
+    loadChildren: () => import('./message/message.module').then( m => m.MessagePageModule)
+  },
+  {
+    path: 'size',
+    loadChildren: () => import('./size/size.module').then( m => m.SizePageModule)
+  },
 ];
 
 @NgModule({

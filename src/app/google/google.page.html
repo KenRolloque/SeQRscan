@@ -1,0 +1,49 @@
+<ion-grid>
+  <ion-row>
+
+  <ion-card>
+    <div id ="header"> <ion-img src ="../../assets/google.png" id ="google-icon"></ion-img> 
+      Sign in with Google
+    </div>
+
+    <ion-icon name="person-circle-outline" id ="icon-logo"></ion-icon>
+    <h4>Choose an acccount</h4>
+    <h6>to continue to SeQRScan</h6> 
+
+    <div>
+      <button (click) ="goToMain()">
+        <span id ="user-icon">k</span>
+        <span id ="user-cont">
+          <p id ="name">Ken Rolloque</p>
+          <p id ="email">kenmarkrolloque@gmail.com</p>
+        </span>
+      </button>
+    </div>
+
+    
+    <div>
+      <button (click) ="goToMain()">
+        <span id ="user-icon2">m</span>
+        <span id ="user-cont" >
+          <p id ="name">Mark Gabriel Quinto</p>
+          <p id ="email">markgabriel@gmail.com</p>
+        </span>
+      </button>
+    </div>
+
+    <div>
+      <button (click) = "goToGoogle()">
+        <ion-icon name="person-add-outline" id ="addAcc-icon"></ion-icon>
+        <h5 id ="add" >Add another account</h5>
+      </button>
+    </div>
+    <p id = "notice">To continue, Google will share your name,
+      email address and profile picture with 
+      SeQRScan.Before using this app, 
+      review its <span>privacy policy</span> and <span> of 
+      service.</span>
+  </p>
+
+  </ion-card>
+</ion-row>
+</ion-grid>

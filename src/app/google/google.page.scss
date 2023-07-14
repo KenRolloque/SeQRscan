@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+    color:#737373 ;
+   
+}
+
+ion-grid{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #747474;
+}
+
+ion-col,ion-row{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+
+ion-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .8em;
+    padding: 0em 0 3em 0;
+    width: 90%;
+}
+
+#header{
+    border-bottom: 1px solid rgb(175, 175, 175);
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 14px;
+}
+
+#google-icon{
+    width: 16px;
+    height: auto;
+}
+#icon-logo{
+    margin-top: .5em;
+    font-size: 50px;
+}
+
+
+#notice{
+    width: 70%;
+}
+p{
+    text-align: justify;
+  
+}
+
+h4, h6{
+    color: black;
+}
+h6{
+    margin-bottom: 1.5em;
+
+}
+div {
+    width: 80%;
+}
+button{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 1.2em;
+    background-color: white;   
+    padding-bottom: .8em;
+    border-bottom: 1px solid rgb(175, 175, 175);
+    padding: 10px 0;
+}
+
+
+
+#user-cont{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font: normal 14px sans-serif;
+}
+
+#user-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: rgb(202, 0, 0);
+    color: white;
+
+}
+
+#user-icon2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: rgb(202, 0, 0);
+    color: white;
+
+}
+
+
+#addAcc-icon{
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0 .5em;
+    color: black;
+}
+
+#add{
+    font: normal 14px sans-serif;
+    color: black;
+}
+
+#notice{
+    margin-top: 1em;
+    width: 80%;
+}
+#notice > span{
+    color: #0077ff;
+}

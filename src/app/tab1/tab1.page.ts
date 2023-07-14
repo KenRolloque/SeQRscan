@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { NavController } from '@ionic/angular';
+import { NavController, ToastController } from '@ionic/angular';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -9,7 +10,14 @@ import { NavController } from '@ionic/angular';
 })
 export class Tab1Page implements OnInit {
 
-  constructor(private navCtrl: NavController) {}
+  setSize: number =100;
+
+  constructor(
+    private navCtrl: NavController,
+    private toastController: ToastController,
+    private router: Router
+
+    ) {}
 
   inputValue:string ="";
   qrValue:string =""
@@ -34,19 +42,51 @@ export class Tab1Page implements OnInit {
 }
 
 
+clearField(){
+  this.inputValue = "";
+  this.showContainer = false;
+}
+
 clearQR(){
   // this.navCtrl.navigateForward('/gallery');
   this.inputValue = "";
   this.showContainer = false;
 
+  if (!this.descValue ){
+  
+  }else{
+    this.showAddedToast();
+  }
+
+
+
 }
 
 
-add(){
 
-    if(this.descValue){
-      
-    }
+
+
+// Show Download Toast
+
+async showAddedToast(){
+  
+  const toast = await this.toastController.create({
+
+    message: 'QR Code is successfully added.',
+    duration: 2000,
+    position: 'top',
+    icon:'checkmark-circle',
+    cssClass: 'custom-toast'
+  });
+  toast.present();
+}
+
+
+
+
+goToSize(){
+
+  this.router.navigateByUrl('/size');
 }
 
 }

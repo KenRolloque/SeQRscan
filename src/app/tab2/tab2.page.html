@@ -6,10 +6,48 @@
     </ion-col>
   </ion-row>
 
+  <ion-row id ="qr-cont">
+    <qrcode [qrdata]="'qrValue'" [width]="300" [errorCorrectionLevel]="'M'"></qrcode>
+  </ion-row>
+
+  <ion-row id = "range">
+    <div>
+    <ion-range label-placement="start">
+      <ion-icon id ="out-icons" name="remove-outline" slot="start"></ion-icon>
+      <ion-icon id ="in-icons" name="add-outline" slot="end"></ion-icon>
+    </ion-range>
+    </div>
+  </ion-row>
+
+  <ion-row id ="functionality">
+
+    <div>
+      <!-- <span>
+        <ion-icon name="images-outline"></ion-icon>
+        <ion-label id ="upload-label"> Upload </ion-label>
+      </span> -->
+
+      <span>
+        <ion-toggle [(ngModel)] ="toogleState" aria-label="Secondary toggle" color="secondary" [checked]="true">
+          
+
+        </ion-toggle>
+        <ion-label id ="flashlight-label">
+          
+          <span [ngClass] = "{'on-text': toogleState, 'off-text': !toogleState}">
+            {{ toogleState ? 'Flashlight On' : 'Flashlight Off' }}
+          </span>
+        </ion-label>
+      </span>
+    </div>
+
+  </ion-row>
+
   <ion-row id ="button-cont">
     <ion-col>
       <ion-button (click) = "goToError()"> Error </ion-button>
       <ion-button (click) = "goToSafe()"> Safe </ion-button>
+      <ion-button (click) = "goToMessage()"> Message </ion-button>
     </ion-col>
   </ion-row>
 </ion-grid>

@@ -1,0 +1,21 @@
+<ion-grid>
+  <ion-row id ="header-row">
+    <h2 id = "header">Download</h2>
+    <h2 (click) = "goToBack()"> Back</h2>
+  </ion-row>
+
+  <ion-row id ="main-row">
+    <div>
+      <!-- <ion-label> Size: </ion-label> -->
+      <ion-input placeholder  ="Enter Size" type ="number" [(ngModel)] = "setSize"></ion-input>
+    </div>
+  </ion-row>
+
+  <ion-row id ="button-row">
+    <div>
+    <ion-button (click) ="saveAction()"> 
+      Save
+    </ion-button>
+    </div>
+  </ion-row>
+</ion-grid>

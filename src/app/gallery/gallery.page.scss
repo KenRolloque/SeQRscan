@@ -10,10 +10,47 @@ ion-grid{
 }
 
 #header{
-  
     width: 100%;
-    
+}
 
+#note{
+    font: normal 14px Poppins;
+    text-align: center;
+    color: #4c4e4e;
+}
+#size-row{
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+#size-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // border: 1px solid red;
+    width: 100%;
+    gap: .5em;
+}
+
+#size-row >div{
+    display: flex;
+    // justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    width:85%;
+}
+
+#size-container > ion-input{
+    background-color: #e0e0e0;
+    // color: white;
+    border-radius: 5px;
+    text-align: center;
+    width: 20%;
+    min-height: 2em;
+    max-height: 2em;
 }
 
 ion-col > h2 {
@@ -26,6 +63,7 @@ ion-col > h2 {
     font: normal 14px Poppins;
 
 }
+
 
 ion-row, ion-col{
     width: 100%;
@@ -122,4 +160,6 @@ ion-button{
 // .custom-toast::part(message) {
 //     font-style: italic;
 //   }
+
+
 

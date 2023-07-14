@@ -28,24 +28,35 @@
 
 @font-face {
   font-family: 'Poppins';
-  src: url('./assets/Poppins/Poppins-Regular.ttf');
+  src: url('./assets/font/Poppins/Poppins-Regular.ttf');
 }
 
 @font-face {
   font-family: 'Poppins-Bold';
-  src: url('./assets/Poppins/Poppins-Bold.ttf');
+  src: url('./assets/font/Poppins/Poppins-SemiBold.ttf');
 }
 
 
 @font-face {
   font-family: 'Roboto';
-  src: url('./assets/Roboto/Roboto-Regular.ttf');
+  src: url('./assets/font/Roboto/Roboto-Regular.ttf');
 }
+
+@font-face {
+  font-family: 'Noto-sans';
+  src: url('./assets/font/Noto_sans/NotoSans-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Noto-sans-bold';
+  src: url('./assets/font/Noto_sans/NotoSans-Bold.ttf');
+}
+
 
 
 @font-face {
   font-family: 'Lato';
-  src: url('./assets/Lato/Lato-Regular.ttf');
+  src: url('./assets/font/Lato/Lato-Regular.ttf');
 }
 
 
@@ -112,7 +123,37 @@
       align-items: center;
       margin-bottom: 10px;
       padding:2em;
-    
+      
     }
   
+
+  .download-toast{
+    font: normal 12px Poppins;
+    --border-radius:5px;
+    color:#00BF63;
+    --background:white;
+    --box-shadow: 1px 1px 8px -2px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 1px 1px 8px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 1px 8px -2px rgba(0,0,0,0.75);
+
+  }
   
+.error-toast{
+  font: normal 12px Poppins;
+  --border-radius:5px;
+  color:red;
+  --background:white;
+  --box-shadow: 1px 1px 8px -2px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 1px 1px 8px -2px rgba(0,0,0,0.75);
+  -moz-box-shadow: 1px 1px 8px -2px rgba(0,0,0,0.75);
+}
+  
+.custom-toast{
+  font: normal 12px Poppins;
+  --border-radius:5px;
+  color:#00BF63;
+  --background:white;
+  --box-shadow: 1px 1px 8px -2px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 1px 1px 8px -2px rgba(0,0,0,0.75);
+  -moz-box-shadow: 1px 1px 8px -2px rgba(0,0,0,0.75);
+}

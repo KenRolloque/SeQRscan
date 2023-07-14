@@ -1,0 +1,168 @@
+*{
+    padding: 0;
+    margin: 0;
+    color:#737373 ;
+   
+}
+
+ion-grid{
+   
+    // align-items: center;
+    // justify-content: center;
+    background-color: white;
+}
+
+#header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 14px;
+    border-bottom: 1px solid rgb(201, 201, 201);
+    height: 4vh;
+    gap: 1em;
+    padding: 10px 0 20px;
+
+
+}
+
+#google-icon{
+    margin-left: 1em;
+    width: 16px;
+    height: auto;
+}
+
+#title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em 0;
+    gap: 1em;
+    color: black;
+}
+
+#title > h4{
+    font:normal 24px Noto-sans;
+    color: black;
+}
+
+#title > h6{
+    color: black;
+    font-family: Roboto;
+}
+
+#title > h6 > span{
+    color:#006eff;
+    font-weight: bold;
+    font-family: Roboto;
+
+}
+
+
+#email-input{
+    width: 90%;
+    border: 1px solid rgb(175, 175, 175);
+    border-radius: 5px;
+    --padding-start:1em;
+    font-family: Roboto;
+}
+
+
+#input,#forgot{
+    display: flex;
+    justify-content: center;
+    font-family: Noto-sans;
+}
+
+#forgot{
+    margin-top: 1em;
+}
+
+
+#forgot-pass{
+    width: 90%;
+    font: normal 14px Roboto;
+    color: #006eff;
+    // font-family: Noto-sans;
+}
+#buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+
+}
+
+#buttons >div{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+#buttons >div >ion-button{
+   
+
+    height:40px;
+    --border-radius:5px;
+}
+
+#next-bttn{
+    color: white;
+    width: 6em;
+    font:  normal 14px Noto-sans;
+  
+}
+
+#create-bttn{
+    color: #006eff;
+    display: flex;
+    align-items: center;
+    font:  normal 14px Noto-sans;
+}
+
+#error{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    color: red;
+    font:  normal 14px Noto-sans;
+    margin-top: 5px;
+    gap: 10px;
+}
+
+#error > ion-icon{
+    color: red;
+}
+ion-input.error {
+    --border-color: red;
+  }
+// ion-col,ion-row{
+//     display: flex;
+//     justify-content: center;
+//     width: 100%;
+
+// }
+
+// ion-card{
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: center;
+//     gap: .8em;
+//     padding: 0em 0 3em 0;
+//     width: 90%;
+// }
+
+
+
+
+
+
+// #option{
+//     display: flex;
+//     justify-content: flex-end;
+//     width: 90%;
+// }
+
+// #notice > span{
+//     color: #0077ff;
+// }

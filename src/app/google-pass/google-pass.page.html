@@ -1,0 +1,40 @@
+<ion-grid>
+  <ion-row id ="header">
+   <ion-img src ="../../assets/google.png" id ="google-icon"></ion-img> 
+      Sign in with Google
+  </ion-row>
+
+
+  <ion-row id ="title">
+    <h4>Welcome</h4>
+    <div id ="user-cont">
+      <span>N</span>
+      <h6>newuser@gmail.com</h6> 
+    </div>
+  </ion-row>
+
+  <ion-row id ="verify">
+    <p>To continue, first verify it's you</p>
+  </ion-row>
+
+  <ion-row id ="input">
+    <ion-input [(ngModel)]="inputValue" type="password" [ngClass]="{'error': showError}" id ="email-input" label="Password" label-placement="floating" fill="outline" placeholder="Password
+    "></ion-input>    
+    <div *ngIf="showError" id ="error"> 
+      <ion-icon name="alert-circle"></ion-icon>
+        Enter password.
+      </div>
+  </ion-row>
+  
+
+  <!-- <ion-row id ="forgot">
+    <h6 id ="forgot-pass" >Forgot Password?</h6>
+  </ion-row> -->
+
+  <ion-row id ="buttons">
+    <div>
+      <h6 id ="create-bttn">Forgot password?</h6>
+      <ion-button id ="next-bttn" (click) = "goToConfirm()">Next</ion-button>
+    </div>
+  </ion-row>
+</ion-grid>

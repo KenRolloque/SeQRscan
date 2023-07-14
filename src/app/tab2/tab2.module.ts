@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 
 import { Tab2PageRoutingModule } from './tab2-routing.module';
+import { QRCodeModule } from 'angularx-qrcode';
 
 import { Tab2Page } from './tab2.page';
 
@@ -13,7 +14,8 @@ import { Tab2Page } from './tab2.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    Tab2PageRoutingModule
+    Tab2PageRoutingModule,
+    QRCodeModule
   ],
   declarations: [Tab2Page]
 })

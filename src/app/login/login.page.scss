@@ -35,6 +35,12 @@ ion-row{
     width: 100%;
 }
 
+#form-row{}
+
+#header, #form-row,#pass_row, #seperator-row{
+    padding-bottom: 1em;
+}
+
 #logo-row{
     padding: 2em 0em;
 }
@@ -53,6 +59,8 @@ ion-col{
     align-items: center;
     gap: 5px;
     padding: 3em 0 0 0;
+    margin-bottom: 2em;
+
     
 }
 
@@ -74,6 +82,7 @@ ion-col{
 #logo-container{
     display: flex;
     align-items: center;
+    gap: 8px;
     // border: 1px solid red;
   }
   
@@ -93,19 +102,19 @@ ion-col{
 
 #form-row{
     width: 100%;
-
-}
-
-
-#form-container{
-    width: 100%;
-    display: flex;
     justify-content: center;
-    gap: 2em;
-    padding: 2em 0;
-    // border: 1px solid red;
-    
 }
+
+
+// #form-container{
+//     width: 100%;
+//     display: flex;
+ 
+//     // gap: 2em;
+//     padding: 2em 0;
+//     // border: 1px solid red;
+    
+// }
 
 #form-container > h2{
     // align-self: flex-start;
@@ -113,6 +122,21 @@ ion-col{
     color: rgb(62, 62, 62);
 }
 
+
+#pass_row{
+    display: flex;
+    justify-content: center;
+}
+
+#button-row{
+    display: flex;
+    justify-content: center;
+}
+
+#seperator-row{
+    display: flex;
+    justify-content: center;
+}
 
 ion-input{
     width: 80%;
@@ -123,44 +147,93 @@ ion-input{
     
 }
 
+
+#google-row{
+    display: flex;
+    justify-content: center;
+}
+
+#reminder-row{
+    display: flex;
+    justify-content: center;
+}
+
+#logo-row{
+    display: flex;
+    justify-content: center;   
+    
+}
+.validation{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    gap: 10px;
+    color: red;
+    font:  normal 14px Noto-sans;
+    // margin-bottom: 2em;
+
+
+}
+
+.validation > ion-icon{
+    color: red;
+}
+
 #login-bttn{
     display: flex;
     --background:#004594;
     font: normal 14px Arial;
     width: 80%;
     --border-radius:5px;
+    margin-bottom: 2em;
+    min-height: 3em;
+    max-height: 3em;
     //height: 3em; 
 }
 
 
 img{
-    width:15%;
+    width:12%;
     height: auto;
     padding: 0 1em 0 0;
 }
+
+
 #google-bttn{
     --background:rgb(228, 228, 228);
     color: black;
     width: 80%;
     --border-radius:5px;
     height: 3em; 
+    margin-bottom: 2em;
+
 }
 
-#form-container > p{
+#reminder-row > p{
     text-align: center;
     line-height: 1.5em;
     color:rgb(135, 135, 135) ;
     font: normal 14px Poppins;
+    margin-bottom: 2em;
+
 }
 
-#form-container > div{
+#form-container > div:not(.validation){
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    // gap: 10px;
 }
-span{
+
+#separator{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5em;
+     width: 100%;
+}
+#separator > span{
     display: inline-block;
     width: 35%;
     height: 1px;

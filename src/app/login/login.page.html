@@ -19,31 +19,56 @@
 
 
       <ion-row id = "form-row">
-        <ion-col id ="form-container">
             <!-- <h2>Login</h2> -->
-            <ion-input placeholder ="Email" ></ion-input>
-            <ion-input type ="password" placeholder ="Password" ></ion-input>
-          
-            <ion-button id ="login-bttn" (click) ="goToMain()">LOGIN</ion-button>
-            <div>
-              <span></span> 
-              <p>or</p>
-              <span></span>
+            <ion-input placeholder ="Email" [(ngModel)]="inputValue_email"  [ngClass]="{'error': showError}"></ion-input>
+            <div class="validation" *ngIf="showError">
+              <ion-icon name="alert-circle"></ion-icon>
+               Incorrect email.
             </div>
-
-            <ion-button id ="google-bttn"> <img src="assets/google.png">Continue with Google</ion-button>
-
-            <p>Need an account? Press the Google button<br> 
-              above or sign up with email</p>
-
-
-            <div id ="logo-container">  
-                <ion-icon id = "qr-icon" name="qr-code-outline"></ion-icon>
-                <h2>SeQRscan</h2>
-            </div>
-
-        </ion-col>
       </ion-row>
+
+      <ion-row  id = "pass_row">
+        <ion-input type ="password" placeholder ="Password" [(ngModel)]="inputValue_pass"  [ngClass]="{'error': showError}"></ion-input>
+        <div class="validation" *ngIf="showError">
+          <ion-icon name="alert-circle"></ion-icon>
+            Incorrect passsword.
+        </div>
+      </ion-row>
+
+      <ion-row id ="button-row">
+        <ion-button id ="login-bttn" (click) ="goToMain()">LOGIN</ion-button>
+      </ion-row>
+
+      <ion-row id ="seperator-row">         
+        <div id ="separator">
+          <span></span> 
+          <p>or</p>
+          <span></span>
+        </div>
+      </ion-row>
+
+      <ion-row id ="google-row">
+        <ion-button id ="google-bttn" (click) = "goToGoogle()"> <img src="assets/google.png">Continue with Google</ion-button>
+      </ion-row>
+
+      <ion-row id ="reminder-row">
+        <p>Need an account? Press the Google button<br> 
+          above or sign up with email</p>
+      </ion-row>
+
+
+      <ion-row id ="logo-row">
+        <div id ="logo-container">  
+          <ion-icon id = "qr-icon" name="qr-code-outline"></ion-icon>
+          <h2>SeQRscan</h2>
+      </div>
+      </ion-row>
+  
+
+
+
+
+      <!-- </ion-row> -->
 
           <!-- logo image -->
           <!-- <ion-row>

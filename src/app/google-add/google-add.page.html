@@ -1,0 +1,32 @@
+<ion-grid>
+  <ion-row id ="header">
+   <ion-img src ="../../assets/google.png" id ="google-icon"></ion-img> 
+      Sign in with Google
+  </ion-row>
+
+
+  <ion-row id ="title">
+    <h4>Sign in</h4>
+    <h6>to continue to <span>SeQRScan</span></h6> 
+  </ion-row>
+
+
+  <ion-row id ="input">
+    <ion-input  [(ngModel)]="inputValue" id ="email-input"  [ngClass]="{'error': showError}" label="Email or Phone" label-placement="floating" fill="outline" placeholder="Email or Phone" required></ion-input>    
+    <div *ngIf="showError" id ="error"> 
+      <ion-icon name="alert-circle"></ion-icon>
+        Enter an email or phonenumber.
+      </div>
+  </ion-row>
+  
+  <ion-row id ="forgot">
+    <h6 id ="forgot-pass">Forgot Email?</h6>
+  </ion-row>
+
+  <ion-row id ="buttons">
+    <div>
+      <h6 id ="create-bttn">Create an account</h6>
+      <ion-button id ="next-bttn" (click) ="goToPass()">Next</ion-button>
+    </div>
+  </ion-row>
+</ion-grid>
